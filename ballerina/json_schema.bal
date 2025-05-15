@@ -157,4 +157,4 @@ public type StringEncodedDataConfig record {|
 |};
 
 # Complete this.
-public annotation StringEncodedDataConfig StrignEncodedData on type;
+public annotation StringEncodedDataConfig StringEncodedData on type;
