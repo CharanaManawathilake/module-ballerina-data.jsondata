@@ -126,3 +126,35 @@ public type AdditionalPropertiesConfig record {|
 
 # The annotation is used to specify additional properties in a JSON object.
 public annotation AdditionalPropertiesConfig AdditionalProperties on type;
+
+# The annotation is used to specify read-only fields.
+public annotation ReadOnly on type;
+
+# The annotation is used to specify write-only fields.
+public annotation WriteOnly on type;
+
+# Complete this.
+public type MetaDataConfig record {|
+    # The title of the field.
+    string title?;
+    # Complete this.
+    json[] examples?;
+    # Complete this.
+    string comment?;
+|};
+
+# Complete this.
+public annotation MetaDataConfig MetaData on type;
+
+# Complete this.
+public type StringEncodedDataConfig record {|
+    # Complete this.
+	string contentMediaType?;
+    # Complete this.
+	string contentEncoding?;
+    # Complete this.
+	typedesc<json> contentSchema?;
+|};
+
+# Complete this.
+public annotation StringEncodedDataConfig StrignEncodedData on type;
